@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* Navigation */
@@ -327,8 +327,21 @@ body {
 .about-text p {
     color: #64748b;
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
     line-height: 1.8;
+}
+.about-text ul {
+    color : #6e7c8f;
+    font-size:1.1rem;
+    margin-bottom: 1.0rem;
+    line-height: 1.8;
+    padding-left : 1rem;
+    font-weight: 1000;
+    list-style-type: symbols('cyclic '★ '');
+}
+ul li::marker {
+  content:'   ☆  ' ;
+  padding :5px;
 }
 
 /* Projects Section */
