@@ -448,6 +448,44 @@ ul li::marker {
     padding: 100px 0;
     background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%);
 }
+.skills-list h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+.skills-list p {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.Areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Areas div {
+    width:20rem;
+    height: 10rem;
+    margin: 1rem;
+    display:flex;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(215, 131, 131, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color:#1f2937;
+    border: goldenrod 2px solid;
+}
+
+/* Skills Section
+.skills {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%);
+}
 
 .skills-content {
     display: flex;
@@ -538,7 +576,7 @@ ul li::marker {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 2s infinite;
 }
-
+ */
 /* Education Section */
 .education {
     padding: 100px 0;
