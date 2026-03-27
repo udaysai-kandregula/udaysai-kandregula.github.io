@@ -1,289 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udaysai Kandregula | Data Enthusiast</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>udaysal-kandregula — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Cabinet+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="apple-touch-icon" href="/Source/favicon-32x32.png">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <h2>Mr.Udaysai</h2>
-            </div>
-            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certification">Certification</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor">
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+</div>
+
+<!-- Grid Background -->
+<div class="grid-bg"></div>
+
+<!-- ── NAVIGATION ── -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Mr.udaysai</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-orb orb-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Available for Work — Now</div>
+    <h1 class="hero-name">
+      <span class="line1">Kandregula</span>
+      <span class="line2">Uday Sai</span>
+    </h1>
+    <p class="hero-role">
+      <span id="typed-role">Full Stack Developer</span><span class="blink"></span>
+    </p>
+    <p class="hero-desc">
+     I’m an MCA student passionate about data analytics and front-end development, focused on transforming data into insights and building intuitive, user-friendly digital solutions.ineering. Turning complex problems into elegant digital solutions.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <span>View Projects</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Let's Talk</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">MCA</div>
+      <div class="stat-label">Graduate.</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">problems Solved</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Project</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-img-bg">
+        <img src="asserts/myPic.jpg" alt="" width="600x" height="600px">
+      </div>
+      <div class="about-corner"></div>
+      <div class="about-corner-br"></div>
+    </div>
+    <div class="about-text">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal reveal-delay-1">Building solutions with data and design..</h2>
+      <div class="reveal reveal-delay-2">
+        <p>Hi, I'm <Strong> Udaysai Kandregula </strong>an MCA student and aspiring Data Analyst & Front-End Developer, passionate about creating meaningful insights and intuitive digital experiences.</p>
+        <p>I specialize in analyzing data, visualizing insights, and building responsive user interfaces. My approach combines strong analytical thinking with clean, modern design to deliver solutions that are both practical and engaging.</p>
+        <p>Through internships and projects, I've gained hands-on experience in data analysis, software testing, and front-end development, continuously improving my skills and adapting to new technologies..</p>
+      </div>
+      <div class="about-tags reveal reveal-delay-3">
+        <span class="tag">Problem Solver</span>
+        <span class="tag">Data Driven</span>
+        <span class="tag">Performance Obsessed</span>
+        <span class="tag">Clean Code</span>
+        <span class="tag">Continuous Learner</span>
+        <span class="tag">Team Player</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-label reveal">Expertise</div>
+  <h2 class="section-title reveal reveal-delay-1">What I Bring<br>to the Table</h2>
+
+  <div class="skills-layout">
+    <div class="skills-cats reveal reveal-delay-2">
+      <div class="skill-cat active">
+        <div class="skill-cat-name">Frontend</div>
+        <div class="skill-cat-count">8 Technologies</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-name">Backend</div>
+        <div class="skill-cat-count">6 Technologies</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-name">Tools & DevOps</div>
+        <div class="skill-cat-count">7 Tools</div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-name">Design</div>
+        <div class="skill-cat-count">4 Tools</div>
+      </div>
+    </div>
+
+    <div class="skills-grid reveal reveal-delay-2">
+      <div class="skill-card">
+        <div class="skill-icon">⚛️</div>
+        <div class="skill-name">React.js</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.65"></div></div>
+        <div class="skill-pct">65%</div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">CSS / Tailwind</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.70"></div></div>
+        <div class="skill-pct">72%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🟩</div>
+        <div class="skill-name">Node.js</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.88"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.80"></div></div>
+        <div class="skill-pct">80%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">SQL</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.85"></div></div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">😊</div>
+        <div class="skill-name">Data Analyst</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.78"></div></div>
+        <div class="skill-pct">78%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">😊</div>
+        <div class="skill-name">Django</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.78"></div></div>
+        <div class="skill-pct">78%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎭</div>
+        <div class="skill-name">Canva</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--w:0.82"></div></div>
+        <div class="skill-pct">82%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-title reveal reveal-delay-1">Selected Work</h2>
+    </div>
+    <a href="#" class="btn-ghost reveal">View All →</a>
+  </div>
+
+  <!-- <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="project-num">01</div>
+        <div class="project-thumb-accent" style="background:radial-gradient(circle,var(--accent),transparent);top:-30px;right:80px;opacity:0.3"></div>
+        <div class="project-overlay"><a href="#" class="project-overlay-btn">View Case Study</a></div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag-row">
+          <span class="project-tech">React</span>
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">PostgreSQL</span>
+          <span class="project-tech">AWS</span>
         </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h3 class="greeting">Hello Everyone</h3>
-                <h1 class="hero-title">I'm Udaysai Kandregula</h1>
-                <h3 class="pronouns">(He/Him)</h3>
-
-                <div class="welcome-text">
-                    <span>Welcome to my portfolio</span>
-                    <span class="emoji">🥰</span>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Resume</a>
-                    <a href="https://www.linkedin.com/in/udaysaikandregula/" target="_blank" class="btn btn-secondary">LinkedIn</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/udaysai-kandregula" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/udaysaikandregula/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:udaysai.kandregula@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="asserts/lord-krishna.jpg" alt="Udaysai Kandregula">
-                </div>
-            </div>
+        <div class="project-name">SaaS Analytics Dashboard</div>
+        <div class="project-desc">A real-time analytics platform processing 500K+ events/day with interactive visualizations, custom reporting, and multi-tenant architecture.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Live Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="asserts/lord-krishna.jpg" alt="About Udaysai">
-                </div>
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <div class="divider"></div>
-                    <p>I'm Udaysai Kandregula, currently pursuing my MCA at Acharya Nagarjuna University, Andhra Pradesh.
-                         With a strong background in statistics, computer science, and data analysis, I'm passionate about using 
-                         data to uncover meaningful insights and support better decision-making.</p>
-                    <p>Over the course of my studies, I have built a strong interest in front-end development, data visualization, 
-                        and analytics. I've gained hands-on experience through projects, coursework, and internships, including:
-                    <ul class>
-                        <li>A Front-End Development program with Crio.do</li>
-                        <li>A long-term internship in software testing at Profimaker India</li>
-                        <li>A Python with Data Science internship at Spondias India Pvt. Ltd. Kakinada</li>
-                    </ul>
-                </p>
-                    <p>I'm skilled in HTML, CSS, JavaScript, SQL, Python, and Java, and I work comfortably with tools such as 
-                        MySQL, Tableau, and Excel. With a curious mindset and problem-solving approach, I enjoy taking on challenges
-                         and creating solutions that add value.</p>
-                </div>
-            </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-thumb">
+        <div class="project-num">02</div>
+        <div class="project-thumb-accent" style="background:radial-gradient(circle,var(--accent2),transparent);bottom:-30px;left:60px;opacity:0.3"></div>
+        <div class="project-overlay"><a href="#" class="project-overlay-btn">View Project</a></div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag-row">
+          <span class="project-tech">Next.js</span>
+          <span class="project-tech">Stripe</span>
+          <span class="project-tech">Prisma</span>
         </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Recent Projects</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                            alt="Calculator Project">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Calculator</h3>
-                        <p>A fully functional calculator application</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=400"
-                         alt="Weather Analysis">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Data Analysis</h3>
-                        <p>Analysis of weather patterns and trends</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="asserts/library.jpg" alt="Library Management">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Library Management System</h3>
-                        <p>Complete system for managing library resources</p>
-                    </div>
-                </div>
-            </div>
+        <div class="project-name">E-Commerce Platform</div>
+        <div class="project-desc">Full-featured e-commerce solution with payment processing, inventory management, and a headless CMS.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Live Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="skills-content">
-            
-                <div class="skills-list">
-                    <h2>Areas Of Interests  </h2>
-                    <div class="divider"></div>
-                    <p>I have no Special talent. I am only passionately curious.</p>
-                    </div>
-                    <div class="Areas"> 
-                        <div>Python</div>
-                        <div>Java</div>
-                        <div>Data Analysis</div>
-                        <div>Data visualization</div>
-                        <div>SQL</div>
-                        <div>Data Cleaning</div>
-                        <div>Front-End Development</div>
-                    </div>
-    </section>
-
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Education</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="education-content">
-                <div class="timeline">
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="year">
-                                <i class="fas fa-calendar"></i>
-                                2027
-                            </div>
-                            <div class="degree">MCA </div>
-                            <a href="https://www.acharyanagarjunauniversity.in/" target="_blank" class="school">
-                                ACHARYA NAGARJUNA UNIVERSITY
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="year">
-                                <i class="fas fa-calendar"></i>
-                                May-2025
-                            </div>
-                            <div class="degree">BCA (DATA SCIENCE)</div>
-                            <a href="https://www.idealcollege.edu.in/home.php" target="_blank" class="school">
-                                IDEAL college of Arts and Sciences kakinada
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="year">
-                                <i class="fas fa-calendar"></i>
-                                May-2022
-                            </div>
-                            <div class="degree">Vocational INTERMEDIATE</div>
-                            <a href="https://schools.org.in/krishna/28163901137/n-l-v-r-g-s-r-v-jr-college-nimmakuru-pamarru.html" target="_blank" class="school">
-                                NLVRGSRV jr college nimmakuru, Krishna
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- <div class="education-image">
-                    <img src="asserts/school.jpg" alt="Education">
-                </div>  -->
-            </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-thumb">
+        <div class="project-num">03</div>
+        <div class="project-thumb-accent" style="background:radial-gradient(circle,var(--accent3),transparent);top:20px;right:40px;opacity:0.25"></div>
+        <div class="project-overlay"><a href="#" class="project-overlay-btn">View Project</a></div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag-row">
+          <span class="project-tech">Python</span>
+          <span class="project-tech">FastAPI</span>
+          <span class="project-tech">OpenAI</span>
         </div>
-    </section>
-
-    <section id="certification" class="certification">
-        <div class="container">
-            <div class="certification-content">
-                <div class="certification-image">
-                    <img src="asserts/library.jpg" alt="Certifications">
-                </div>
-                <div class="certification-list">
-                    <h2>Certifications</h2>
-                    <div class="divider"></div>
-                    <div class="cert-grid">
-                        <button class="cert-btn active">Java</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                        <button class="cert-btn disabled">Coming Soon</button>
-                    </div>
-                </div>
-            </div>
+        <div class="project-name">AI Content Tool</div>
+        <div class="project-desc">AI-powered content generation tool with fine-tuned models, custom prompting, and a sleek editor interface.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Live Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-image">
-                    <img src="/udaysai-kandregula.github.io/asserts/contet.jpg" alt="Contact">
-                </div>
-                <div class="contact-info">
-                    <h2>Thank You</h2>
-                    <div class="divider"></div>
-                    <p>I hope it was a great experience exploring my website. If you'd like to collaborate, feel free to contact me. Thank you for visiting my portfolio. Have a nice day!</p>
-                    <button class="btn btn-primary contact-btn">Contact Me</button>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 9849714287</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>udaysai.kandregula@yahoo.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-globe"></i>
-                            <span>www.linkedin.udaysai-kandregula</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kakinada, AP, India</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-thumb">
+        <div class="project-num">04</div>
+        <div class="project-thumb-accent" style="background:radial-gradient(circle,var(--accent),transparent);bottom:-20px;right:60px;opacity:0.25"></div>
+        <div class="project-overlay"><a href="#" class="project-overlay-btn">View Project</a></div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag-row">
+          <span class="project-tech">React Native</span>
+          <span class="project-tech">Firebase</span>
         </div>
-    </section>
+        <div class="project-name">Fitness Tracker App</div>
+        <div class="project-desc">Cross-platform mobile app with workout tracking, progress visualization, and social features for 10K+ users.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ App Store</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
 
-    <script src="scripts.js"></script>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-thumb">
+        <div class="project-num">05</div>
+        <div class="project-thumb-accent" style="background:radial-gradient(circle,var(--accent2),transparent);top:30px;left:30px;opacity:0.25"></div>
+        <div class="project-overlay"><a href="#" class="project-overlay-btn">View Project</a></div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag-row">
+          <span class="project-tech">Vue.js</span>
+          <span class="project-tech">D3.js</span>
+          <span class="project-tech">GraphQL</span>
+        </div>
+        <div class="project-name">Data Visualization Suite</div>
+        <div class="project-desc">Interactive data visualization dashboard built for a fintech company to track portfolio performance.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Live Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-label reveal">Career</div>
+  <h2 class="section-title reveal reveal-delay-1">
+    Where I've<br> Made Impact
+  </h2>
+
+  <div class="exp-grid">
+
+    <!-- TIMELINE -->
+    <div class="exp-timeline">
+
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+
+        <div class="exp-date">Feb 2025 - Jul 2025</div>
+        <div class="exp-role">Software Testing Intern</div>
+        <div class="exp-company">Profi-Maker — Remote, India</div>
+
+        <div class="exp-highlights">
+          <div class="exp-highlight">Performed manual & functional testing for quality assurance</div>
+          <div class="exp-highlight">Designed and executed test cases, tracked bugs</div>
+          <div class="exp-highlight">Used Selenium WebDriver for basic automation</div>
+          <div class="exp-highlight">Collaborated with developers to resolve defects</div>
+          <div class="exp-highlight">Contributed to QA processes & requirement analysis</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal reveal-delay-1">
+        <div class="exp-dot accent2"></div>
+
+        <div class="exp-date">May 2023 - Jul 2023</div>
+        <div class="exp-role">Data Science Intern</div>
+        <div class="exp-company">Spondias India Pvt. Ltd. — Kakinada</div>
+
+        <div class="exp-highlights">
+          <div class="exp-highlight">Built weather data analysis project</div>
+          <div class="exp-highlight">Cleaned data using Python, Pandas, NumPy</div>
+          <div class="exp-highlight">Created visualizations using Matplotlib</div>
+          <div class="exp-highlight">Worked on structured data pipelines</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="exp-aside">
+      <div class="edu-card reveal">
+        <div class="edu-year">2025 - 2027</div>
+        <div class="edu-degree">Master of Computer Applications</div>
+        <div class="edu-school">Acharya Nagarjuna University</div>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-year">2022 - 2025</div>
+        <div class="edu-degree">Bachelor of Computer Applications</div>
+        <div class="edu-school">Adikavi Nannaya University</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal">Get in Touch</div>
+    <h2 class="section-title reveal reveal-delay-1">Let's Build<br>Something Great</h2>
+    <p class="section-sub reveal reveal-delay-2">Open to full-time roles, freelance projects, and exciting collaborations. Let's talk.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon-wrap">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val"><a href="mailto:alex@example.com">alex@example.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-wrap">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Guntur</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-wrap">🕐</div>
+          <div>
+            <div class="contact-item-label">Availability</div>
+            <div class="contact-item-val" style="color:var(--accent)">● Open to Opportunities</div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-item-label" style="font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">Find Me On</div>
+          <div class="socials">
+            <a href="#" class="social-btn" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-btn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" title="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" title="Dribbble">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.35 3.92 2.164 6.29 2.164 1.42 0 2.77-.29 4-.814zm-9.622-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C9.46 15 3.952 14.88 3.375 14.868l-.005.14c0 2.17.8 4.16 2.013 5.702zm-2.13-7.31c.59.01 5.495.117 9.77-1.597C12.255 7.628 10.6 5.48 10.37 5.195c-2.55 1.205-4.45 3.51-5.017 6.275zM11.87 4.514c.24.317 1.93 2.462 3.952 6.116 3.77-1.414 5.372-3.56 5.564-3.83-1.658-1.48-3.846-2.38-6.246-2.38-.445 0-.882.04-1.31.113h-.001v-.019z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal reveal-delay-2" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="....@company.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">— Select a Topic —</option>
+            <option>Full-time Role Opportunity</option>
+            <option>Freelance / Contract Project</option>
+            <option>Collaboration / Open Source</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8H14M10 4L14 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>© 2025 Alex Rivera. Crafted with ♥ and lots of ☕</div>
+  <div>Built with HTML · CSS · Vanilla JS</div>
+  <div><a href="#">Back to top ↑</a></div>
+</footer>
+
+<script>
+const cursor = document.getElementById('cursor');
+  const dot = document.getElementById('cursorDot');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx+'px'; dot.style.top = my+'px'; });
+  function animRing() {
+    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+    ring.style.left = rx+'px'; ring.style.top = ry+'px';
+    requestAnimationFrame(animRing);
+  }
+  animRing();
+
+</script>
+
+<script src ='scripts.js'></script>
 </body>
 </html>
