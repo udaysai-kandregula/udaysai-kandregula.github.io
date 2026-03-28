@@ -43,22 +43,44 @@
   });
 
   /* Form submit */
+
+  (function() {
+  emailjs.init("0h0yKf6y041zmscrI"); // replace with your key
+})();
+
   function handleSubmit(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submitBtn');
-    btn.innerHTML = '<span>Sending...</span>';
-    btn.disabled = true;
-    setTimeout(() => {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitBtn');
+  btn.innerHTML = '<span>Sending...</span>';
+  btn.disabled = true;
+
+  const params = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value
+  };
+
+  emailjs.send("service_oql3jbd", "template_dk8gauj", params)
+    .then(() => {
       btn.innerHTML = '<span>Message Sent ✓</span>';
       btn.style.background = 'linear-gradient(135deg, #00c896, #00a878)';
       e.target.reset();
+
       setTimeout(() => {
-        btn.innerHTML = '<span>Send Message</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8H14M10 4L14 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
+        btn.innerHTML = '<span>Send Message</span>';
         btn.style.background = '';
         btn.disabled = false;
       }, 3000);
-    }, 1500);
-  }
+    })
+    .catch(() => {
+      btn.innerHTML = '<span>Failed ❌</span>';
+      btn.disabled = false;
+    });
+}
+
+
 
   /* Smooth anchor scroll */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
